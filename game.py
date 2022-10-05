@@ -4,15 +4,15 @@ human_turns = []
 computer_turns = []
 
 while(True):
-    human_turn = input('Enter your turn, or type exit: ')
+    human_turn = input("Enter your turn, or type exit: ")
     computer_turn = random.choice(turns)
-    
-    human_turns.append(human_turn)
-    computer_turns.append(computer_turn)
 
     if human_turn == 'exit':
-        print('Thanks for playing!')
+        print('Thank you for playing!')
         break
+
+    human_turns.append(human_turn)
+    computer_turns.append(computer_turn)
 
     print(f'Human:{human_turn} vs. Computer:{computer_turn}')
     if human_turn == computer_turn:
